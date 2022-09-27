@@ -1,12 +1,13 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-void print_alphabet(void); 
-int add(int a, int b);
-int resta(int a, int b);        
+int tarifa1A(int consumo);
+int tarifa1B(int consumo);
+int tarifa1C(int consumo);
+int tarifa1D(int consumo);
+int tarifa1E(int consumo);
+int tarifaF(int consumo);
+int tarifa1Xc(int consumo);
 
-int mul(int a, int b);          // prototipo de 4-mul.c
-float div(int a, int b);        // prototipo de 5-div.c
-float mod(int a, int b);        // prototipo de 6-div.c
 
 #endif
