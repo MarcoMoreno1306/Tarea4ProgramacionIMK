@@ -12,13 +12,21 @@ int main()
     scanf("%f",&inicio);
     printf("Ingrese la hora a la cual termino la llamada\n");
     scanf("%f",&final);
-tiempo =final-inicio;
+tiempo =final-inicio;        
     if(dia=='L' || dia=='l' || dia=='M' || dia=='m' || dia=='X' || dia=='x' || dia=='J' || dia=='j' || dia=='V' || dia=='v')
 {
+        if(inicio<18.00 || inicio<8.00)
+        {
     costo = tiempo*.30;
+        }
+        else if (inicio>=18.00 || inicio >= 8.00)
+        {
+        costo = tiempo*.20;
+        }
 printf("El costo a pagar es de $%d",costo);
 }
-else if (dia=='S' || dia=='s' || dia=='D' || dia=='d')
+
+ else if (dia=='S' || dia=='s' || dia=='D' || dia=='d')
 {
     costo = tiempo* .15;
     printf("El costo a pagar es de $%d\n",costo);
